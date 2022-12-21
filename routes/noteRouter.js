@@ -1,6 +1,6 @@
 const router = require('express').Router()
-const auth = require('../server/middleware/auth')
-const noteCtrl = require('../server/controller/noteCtrl')
+const auth = require('../middleware/auth')
+const noteCtrl = require('../controller/noteCtrl')
 
 router.route('/')
 .get(auth , noteCtrl.getNotes)
