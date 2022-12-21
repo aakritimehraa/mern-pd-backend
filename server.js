@@ -8,7 +8,7 @@ const noteRouter = require('../routes/noteRouter')
 const app = express()
 app.use(express.json())
 app.use(cors({
-    origin:['http://localhost:5000' , "https://mern-personaldiary.onrender.com"]
+    origin:['http://localhost:5000' , "https://yoda-2ua8.onrender.com"]
 }))
 
 app.use('/user' , userRouter)
