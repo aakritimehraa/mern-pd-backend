@@ -7,7 +7,9 @@ const noteRouter = require('../routes/noteRouter')
 
 const app = express()
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+    origin:['http://localhost:5000' , "https://mern-personaldiary.onrender.com"]
+}))
 
 app.use('/user' , userRouter)
 app.use('/api/notes' , noteRouter)
